@@ -2,159 +2,420 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>J | عالم الجوكر للكمبيوتر</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="dytIquNYbyg5zMJXtK0Y0gQlwTVsfY6i5CQMzOIuf7A" />
+  <meta name="google-site-verification" content="dytIquNYbyg5zMJXtK0Y0gQlwTVsfY6i5CQMzOIuf7A" />
 
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial;background:#090914;color:white;line-height:1.8}
-header{background:#11101d;padding:18px;border-bottom:1px solid #392750}
-nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{font-size:23px;font-weight:bold;color:#c084fc}
-nav a{color:white;text-decoration:none;margin:8px}
-.hero{text-align:center;padding:80px 20px;background:radial-gradient(circle,#38205f,#090914 70%)}
-.hero h1{font-size:38px}
-.hero h1 span{color:#c084fc}
-.hero p,.card p{color:#c8c1d5}
-.btn{display:inline-block;margin:12px 5px;padding:11px 22px;background:#8138d5;color:white;text-decoration:none;border-radius:10px}
-section{padding:50px 20px}
-.container{max-width:1100px;margin:auto}
-h2{text-align:center;color:#c084fc;font-size:30px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
-.card{background:#19172b;border:1px solid #39304e;padding:24px;border-radius:15px;text-align:center}
-.card h3{color:#c084fc}
-.about{background:#11101d;text-align:center}
-footer{text-align:center;padding:25px;color:#aaa;border-top:1px solid #302944}
-@media(max-width:700px){
-.cards{grid-template-columns:repeat(2,1fr)}
-.hero h1{font-size:29px}
-}
-@media(max-width:420px){
-.cards{grid-template-columns:1fr}
-}
-</style>
+  <title>J | عالم الجوكر للكمبيوتر</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080d1c;
+      color: #fff;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #101a35;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      border-bottom: 1px solid #26345b;
+    }
+
+    .logo {
+      color: #a78bfa;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #a78bfa;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px;
+      background: linear-gradient(135deg, #111c3b, #25134b);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #c4b5fd;
+    }
+
+    .hero p {
+      color: #d1d5db;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #7c3aed;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background: #6d28d9;
+    }
+
+    section {
+      padding: 55px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #c4b5fd;
+      font-size: 27px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111a31;
+      border: 1px solid #29365b;
+      border-radius: 12px;
+      padding: 22px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #8b5cf6;
+    }
+
+    .card h3 {
+      color: #c4b5fd;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .card a {
+      color: #a78bfa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      color: white;
+    }
+
+    .note {
+      color: #cbd5e1;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      background: #101a35;
+      text-align: center;
+      padding: 25px;
+      color: #9ca3af;
+      border-top: 1px solid #26345b;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 27px;
+      }
+
+      section {
+        padding: 40px 5%;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-<nav>
-<div class="logo">J | عالم الجوكر</div>
-<div>
-<a href="#home">الرئيسية</a>
-<a href="#services">خدماتنا</a>
-<a href="#windows">تحميل ويندوز</a>
-<a href="#about">من نحن</a>
-</div>
-</nav>
-</header>
+  <header>
+    <div class="logo">J | عالم الجوكر</div>
 
-<main>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#windows">ويندوز</a>
+      <a href="#programs">البرامج</a>
+      <a href="#drivers">التعريفات</a>
+      <a href="#tools">الصيانة</a>
+      <a href="#solutions">الحلول</a>
+      <a href="#about">من نحن</a>
+    </nav>
+  </header>
 
-<div class="hero" id="home">
-<h1>أهلاً بيك في <span>عالم الجوكر</span></h1>
-<p>كل ما يخص الكمبيوتر والتكنولوجيا في مكان واحد.</p>
-<a class="btn" href="#windows">استعرض أنظمة التشغيل</a>
-</div>
+  <div class="hero" id="home">
+    <h1>أهلاً بيك في عالم الجوكر للكمبيوتر</h1>
+    <p>كل ما تحتاجه لجهاز الكمبيوتر في مكان واحد</p>
+    <a href="#windows" class="button">تحميل ويندوز</a>
+    <a href="#programs" class="button">تصفح البرامج</a>
+  </div>
 
-<section id="services">
-<div class="container">
-<h2>خدماتنا</h2>
-<div class="cards">
+  <section id="windows">
+    <h2 class="section-title">أنظمة تشغيل Windows</h2>
+    <p class="note">اختر نسخة الويندوز المناسبة لجهازك.</p>
 
-<div class="card">
-<h3>أنظمة التشغيل</h3>
-<p>جميع إصدارات ويندوز.</p>
-</div>
+    <div class="cards">
 
-<div class="card">
-<h3>برامج الكمبيوتر</h3>
-<p>برامج مهمة ومفيدة للكمبيوتر.</p>
-</div>
+      <div class="card">
+        <h3>Windows XP</h3>
+        <p>نظام ويندوز الكلاسيكي للأجهزة القديمة.</p>
+        <a href="https://getmyos.com/name/windows-xp" target="_blank">عرض النسخ</a>
+      </div>
 
-<div class="card">
-<h3>حل مشاكل الكمبيوتر</h3>
-<p>مساعدة في المشكلات التقنية.</p>
-</div>
+      <div class="card">
+        <h3>Windows Vista</h3>
+        <p>نظام ويندوز فيستا.</p>
+        <a href="https://getmyos.com/variant/microsoft-windows" target="_blank">عرض النسخ</a>
+      </div>
 
-<div class="card">
-<h3>شروحات تقنية</h3>
-<p>شروحات سهلة ومبسطة.</p>
-</div>
+      <div class="card">
+        <h3>Windows 7</h3>
+        <p>ويندوز 7 بإصداراته المختلفة.</p>
+        <a href="https://getmyos.com/name/windows-7" target="_blank">عرض النسخ</a>
+      </div>
 
-</div>
-</div>
-</section>
+      <div class="card">
+        <h3>Windows 8</h3>
+        <p>ويندوز 8.</p>
+        <a href="https://getmyos.com/name/windows-8" target="_blank">عرض النسخ</a>
+      </div>
 
-<section id="windows">
-<div class="container">
+      <div class="card">
+        <h3>Windows 8.1</h3>
+        <p>ويندوز 8.1.</p>
+        <a href="https://getmyos.com/name/windows-8-1" target="_blank">عرض النسخ</a>
+      </div>
 
-<h2>تحميل أنظمة Windows</h2>
-<p style="text-align:center;color:#c8c1d5">
-اختر إصدار الويندوز لعرض النسخ المتاحة.
-</p>
+      <div class="card">
+        <h3>Windows 10</h3>
+        <p>ويندوز 10 بإصداراته المختلفة.</p>
+        <a href="https://getmyos.com/name/windows-10" target="_blank">عرض النسخ</a>
+      </div>
 
-<div class="cards">
+      <div class="card">
+        <h3>Windows 11</h3>
+        <p>تحميل ويندوز 11 من موقع Microsoft الرسمي.</p>
+        <a href="https://www.microsoft.com/software-download/windows11" target="_blank">موقع Microsoft الرسمي</a>
+      </div>
 
-<div class="card">
-<h3>Windows XP</h3>
-<p>إصدارات ويندوز XP.</p>
-<a class="btn" href="https://getmyos.com/name/windows-xp" target="_blank" rel="noopener">عرض النسخ</a>
-</div>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Windows Vista</h3>
-<p>إصدارات ويندوز Vista.</p>
-<a class="btn" href="https://getmyos.com/variant/microsoft-windows" target="_blank" rel="noopener">عرض النسخ</a>
-</div>
+  <section id="programs">
+    <h2 class="section-title">برامج الكمبيوتر</h2>
+    <p class="note">روابط تحميل البرامج من مواقعها الرسمية.</p>
 
-<div class="card">
-<h3>Windows 7</h3>
-<p>إصدارات ويندوز 7.</p>
-<a class="btn" href="https://getmyos.com/name/windows-7" target="_blank" rel="noopener">عرض النسخ</a>
-</div>
+    <div class="cards">
 
-<div class="card">
-<h3>Windows 8</h3>
-<p>إصدارات ويندوز 8.</p>
-<a class="btn" href="https://getmyos.com/name/windows-8" target="_blank" rel="noopener">عرض النسخ</a>
-</div>
+      <div class="card">
+        <h3>Google Chrome</h3>
+        <p>متصفح الإنترنت من Google.</p>
+        <a href="https://www.google.com/chrome/" target="_blank">الموقع الرسمي</a>
+      </div>
 
-<div class="card">
-<h3>Windows 8.1</h3>
-<p>إصدارات ويندوز 8.1.</p>
-<a class="btn" href="https://getmyos.com/name/windows-8-1" target="_blank" rel="noopener">عرض النسخ</a>
-</div>
+      <div class="card">
+        <h3>Mozilla Firefox</h3>
+        <p>متصفح إنترنت سريع ومفتوح المصدر.</p>
+        <a href="https://www.mozilla.org/firefox/new/" target="_blank">الموقع الرسمي</a>
+      </div>
 
-<div class="card">
-<h3>Windows 10</h3>
-<p>إصدارات ويندوز 10.</p>
-<a class="btn" href="https://getmyos.com/name/windows-10" target="_blank" rel="noopener">عرض النسخ</a>
-</div>
+      <div class="card">
+        <h3>VLC Media Player</h3>
+        <p>مشغل الفيديو والصوت.</p>
+        <a href="https://www.videolan.org/vlc/" target="_blank">الموقع الرسمي</a>
+      </div>
 
-<div class="card">
-<h3>Windows 11</h3>
-<p>إصدارات ويندوز 11.</p>
-<a class="btn" href="https://getmyos.com/name/windows-11" target="_blank" rel="noopener">عرض النسخ</a>
-</div>
+      <div class="card">
+        <h3>7-Zip</h3>
+        <p>ضغط وفك ضغط الملفات.</p>
+        <a href="https://www.7-zip.org/" target="_blank">الموقع الرسمي</a>
+      </div>
 
-</div>
-</div>
-</section>
+      <div class="card">
+        <h3>LibreOffice</h3>
+        <p>مجموعة برامج مكتبية للكتابة والجداول والعروض.</p>
+        <a href="https://www.libreoffice.org/download/download-libreoffice/" target="_blank">الموقع الرسمي</a>
+      </div>
 
-<section class="about" id="about">
-<h2>عن عالم الجوكر</h2>
-<p>هدفنا تقديم محتوى تقني مفيد وبسيط لكل محبي الكمبيوتر والتكنولوجيا.</p>
-</section>
+    </div>
+  </section>
 
-</main>
+  <section id="drivers">
+    <h2 class="section-title">تعريفات الكمبيوتر</h2>
+    <p class="note">احصل على التعريفات من الشركات المصنعة لجهازك أو مكوناته.</p>
 
-<footer>
-© 2026 J | عالم الجوكر للكمبيوتر
-</footer>
+    <div class="cards">
+
+      <div class="card">
+        <h3>NVIDIA</h3>
+        <p>تعريفات كروت الشاشة NVIDIA.</p>
+        <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">تحميل التعريفات</a>
+      </div>
+
+      <div class="card">
+        <h3>AMD</h3>
+        <p>تعريفات كروت الشاشة ومعالجات AMD.</p>
+        <a href="https://www.amd.com/en/support" target="_blank">تحميل التعريفات</a>
+      </div>
+
+      <div class="card">
+        <h3>Intel</h3>
+        <p>تعريفات Intel ومكوناتها.</p>
+        <a href="https://www.intel.com/content/www/us/en/download-center/home.html" target="_blank">تحميل التعريفات</a>
+      </div>
+
+      <div class="card">
+        <h3>HP Support</h3>
+        <p>تعريفات ودعم أجهزة HP.</p>
+        <a href="https://support.hp.com/" target="_blank">الموقع الرسمي</a>
+      </div>
+
+      <div class="card">
+        <h3>Dell Support</h3>
+        <p>تعريفات ودعم أجهزة Dell.</p>
+        <a href="https://www.dell.com/support/home/" target="_blank">الموقع الرسمي</a>
+      </div>
+
+      <div class="card">
+        <h3>Lenovo Support</h3>
+        <p>تعريفات ودعم أجهزة Lenovo.</p>
+        <a href="https://support.lenovo.com/" target="_blank">الموقع الرسمي</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2 class="section-title">أدوات الصيانة</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Windows Security</h3>
+        <p>أداة الحماية المدمجة في ويندوز.</p>
+        <a href="https://support.microsoft.com/windows" target="_blank">دليل Microsoft</a>
+      </div>
+
+      <div class="card">
+        <h3>Microsoft Update</h3>
+        <p>تحديث نظام ويندوز ومكوناته.</p>
+        <a href="https://support.microsoft.com/windows" target="_blank">مساعدة التحديثات</a>
+      </div>
+
+      <div class="card">
+        <h3>CrystalDiskInfo</h3>
+        <p>متابعة حالة وحدات التخزين.</p>
+        <a href="https://crystalmark.info/en/software/crystaldiskinfo/" target="_blank">الموقع الرسمي</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="solutions">
+    <h2 class="section-title">حلول مشاكل الكمبيوتر</h2>
+    <p class="note">إرشادات تساعدك في التعامل مع أشهر مشاكل الكمبيوتر.</p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>مشاكل تثبيت ويندوز</h3>
+        <p>تعرف على خطوات التثبيت واستكشاف الأخطاء الشائعة.</p>
+        <a href="https://support.microsoft.com/windows" target="_blank">عرض المساعدة</a>
+      </div>
+
+      <div class="card">
+        <h3>مشاكل الإنترنت</h3>
+        <p>حل مشاكل الاتصال بالشبكة والإنترنت.</p>
+        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
+      </div>
+
+      <div class="card">
+        <h3>مشاكل الصوت</h3>
+        <p>إرشادات لحل مشاكل الصوت والتعريفات.</p>
+        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
+      </div>
+
+      <div class="card">
+        <h3>مشاكل الشاشة</h3>
+        <p>مساعدة في مشاكل العرض ودقة الشاشة.</p>
+        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
+      </div>
+
+      <div class="card">
+        <h3>بطء الكمبيوتر</h3>
+        <p>خطوات لتحسين أداء الجهاز.</p>
+        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
+      </div>
+
+      <div class="card">
+        <h3>مشاكل التعريفات</h3>
+        <p>مساعدة في تحديث التعريفات أو استكشاف أخطائها.</p>
+        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">من نحن</h2>
+    <p class="note">
+      عالم الجوكر للكمبيوتر موقع يهتم بأنظمة التشغيل والبرامج والتعريفات
+      والشروحات التقنية وحلول مشاكل الكمبيوتر.
+    </p>
+  </section>
+
+  <footer>
+    <p>J | عالم الجوكر للكمبيوتر</p>
+    <p>جميع الحقوق محفوظة © 2026</p>
+  </footer>
 
 </body>
 </html>
