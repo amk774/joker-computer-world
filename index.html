@@ -2,420 +2,237 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="google-site-verification" content="dytIquNYbyg5zMJXtK0Y0gQlwTVsfY6i5CQMzOIuf7A" />
-
-  <title>J | عالم الجوكر للكمبيوتر</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #080d1c;
-      color: #fff;
-      line-height: 1.8;
-    }
-
-    header {
-      background: #101a35;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      border-bottom: 1px solid #26345b;
-    }
-
-    .logo {
-      color: #a78bfa;
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #a78bfa;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 75px 20px;
-      background: linear-gradient(135deg, #111c3b, #25134b);
-    }
-
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 15px;
-      color: #c4b5fd;
-    }
-
-    .hero p {
-      color: #d1d5db;
-      margin-bottom: 25px;
-    }
-
-    .button {
-      display: inline-block;
-      background: #7c3aed;
-      color: white;
-      padding: 10px 22px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin: 5px;
-    }
-
-    .button:hover {
-      background: #6d28d9;
-    }
-
-    section {
-      padding: 55px 7%;
-    }
-
-    .section-title {
-      text-align: center;
-      color: #c4b5fd;
-      font-size: 27px;
-      margin-bottom: 30px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #111a31;
-      border: 1px solid #29365b;
-      border-radius: 12px;
-      padding: 22px;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: #8b5cf6;
-    }
-
-    .card h3 {
-      color: #c4b5fd;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #cbd5e1;
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
-    .card a {
-      color: #a78bfa;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .card a:hover {
-      color: white;
-    }
-
-    .note {
-      color: #cbd5e1;
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    footer {
-      background: #101a35;
-      text-align: center;
-      padding: 25px;
-      color: #9ca3af;
-      border-top: 1px solid #26345b;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        justify-content: center;
-        text-align: center;
-      }
-
-      nav {
-        justify-content: center;
-      }
-
-      .hero h1 {
-        font-size: 27px;
-      }
-
-      section {
-        padding: 40px 5%;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="dytIquNYbyg5zMJXtK0Y0gQlwTVsfY6i5CQMzOIuf7A" />
+<title>J | عالم الجوكر للكمبيوتر</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#080d1c;color:#fff;line-height:1.8}
+header{background:#101a35;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px;border-bottom:1px solid #29365b}
+.logo{color:#a78bfa;font-size:24px;font-weight:bold}
+nav{display:flex;flex-wrap:wrap;gap:12px}
+nav a{color:white;text-decoration:none;font-size:13px}
+nav a:hover{color:#a78bfa}
+.hero{text-align:center;padding:70px 20px;background:linear-gradient(135deg,#111c3b,#25134b)}
+.hero h1{font-size:34px;color:#c4b5fd;margin-bottom:12px}
+.hero p{color:#ddd;margin-bottom:20px}
+.button{display:inline-block;background:#7c3aed;color:white;padding:10px 20px;border-radius:8px;text-decoration:none;margin:5px}
+section{padding:45px 5%}
+.section-title{text-align:center;color:#c4b5fd;font-size:26px;margin-bottom:25px}
+.note{text-align:center;color:#cbd5e1;margin-bottom:22px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:16px}
+.card{background:#111a31;border:1px solid #29365b;border-radius:12px;padding:18px;text-align:center;transition:.3s}
+.card:hover{transform:translateY(-4px);border-color:#8b5cf6}
+.card h3{color:#c4b5fd;margin-bottom:8px;font-size:18px}
+.card p{color:#cbd5e1;font-size:14px;margin-bottom:12px}
+.card a{display:inline-block;background:#6334bd;color:white;padding:7px 15px;border-radius:7px;text-decoration:none;font-size:14px}
+.card a:hover{background:#8050db}
+footer{background:#101a35;text-align:center;padding:25px;color:#aaa;border-top:1px solid #29365b}
+@media(max-width:600px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero h1{font-size:26px}}
+</style>
 </head>
-
 <body>
 
-  <header>
-    <div class="logo">J | عالم الجوكر</div>
+<header>
+<div class="logo">J | عالم الجوكر</div>
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#windows">ويندوز</a>
+<a href="#burn">الحرق</a>
+<a href="#clean">الصيانة</a>
+<a href="#disk">الهارد</a>
+<a href="#hardware">فحص الجهاز</a>
+<a href="#repair">إصلاح ويندوز</a>
+<a href="#partition">التقسيم</a>
+<a href="#recovery">الاستعادة</a>
+<a href="#security">الحماية</a>
+<a href="#programs">البرامج</a>
+<a href="#solutions">الحلول</a>
+</nav>
+</header>
 
-    <nav>
-      <a href="#home">الرئيسية</a>
-      <a href="#windows">ويندوز</a>
-      <a href="#programs">البرامج</a>
-      <a href="#drivers">التعريفات</a>
-      <a href="#tools">الصيانة</a>
-      <a href="#solutions">الحلول</a>
-      <a href="#about">من نحن</a>
-    </nav>
-  </header>
+<div class="hero" id="home">
+<h1>أهلاً بيك في عالم الجوكر للكمبيوتر</h1>
+<p>مكتبة برامج الكمبيوتر وأنظمة التشغيل والتعريفات والصيانة والحلول التقنية</p>
+<a href="#windows" class="button">أنظمة التشغيل</a>
+<a href="#programs" class="button">كل البرامج</a>
+</div>
 
-  <div class="hero" id="home">
-    <h1>أهلاً بيك في عالم الجوكر للكمبيوتر</h1>
-    <p>كل ما تحتاجه لجهاز الكمبيوتر في مكان واحد</p>
-    <a href="#windows" class="button">تحميل ويندوز</a>
-    <a href="#programs" class="button">تصفح البرامج</a>
-  </div>
+<section id="windows">
+<h2 class="section-title">أنظمة تشغيل Windows</h2>
+<div class="cards">
+<div class="card"><h3>Windows XP</h3><p>نسخ ويندوز XP</p><a href="https://getmyos.com/name/windows-xp" target="_blank" rel="noopener">عرض النسخ</a></div>
+<div class="card"><h3>Windows Vista</h3><p>نسخ ويندوز Vista</p><a href="https://getmyos.com/variant/microsoft-windows" target="_blank" rel="noopener">عرض النسخ</a></div>
+<div class="card"><h3>Windows 7</h3><p>نسخ ويندوز 7</p><a href="https://getmyos.com/name/windows-7" target="_blank" rel="noopener">عرض النسخ</a></div>
+<div class="card"><h3>Windows 8</h3><p>نسخ ويندوز 8</p><a href="https://getmyos.com/name/windows-8" target="_blank" rel="noopener">عرض النسخ</a></div>
+<div class="card"><h3>Windows 8.1</h3><p>نسخ ويندوز 8.1</p><a href="https://getmyos.com/name/windows-8-1" target="_blank" rel="noopener">عرض النسخ</a></div>
+<div class="card"><h3>Windows 10</h3><p>نسخ ويندوز 10</p><a href="https://getmyos.com/name/windows-10" target="_blank" rel="noopener">عرض النسخ</a></div>
+<div class="card"><h3>Windows 11</h3><p>من Microsoft الرسمي فقط</p><a href="https://www.microsoft.com/software-download/windows11" target="_blank" rel="noopener">Microsoft الرسمي</a></div>
+</div>
+</section>
 
-  <section id="windows">
-    <h2 class="section-title">أنظمة تشغيل Windows</h2>
-    <p class="note">اختر نسخة الويندوز المناسبة لجهازك.</p>
+<section id="burn">
+<h2 class="section-title">1. برامج حرق الويندوز والفلاشات</h2>
+<div class="cards">
+<div class="card"><h3>Rufus</h3><p>إنشاء فلاشة إقلاع</p><a href="https://rufus.ie/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Ventoy</h3><p>تشغيل ملفات ISO من الفلاشة</p><a href="https://www.ventoy.net/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>balenaEtcher</h3><p>حرق ملفات الأنظمة على USB</p><a href="https://etcher.balena.io/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>WinToUSB</h3><p>تثبيت ويندوز على USB</p><a href="https://www.easyuefi.com/wintousb/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>YUMI</h3><p>فلاشة متعددة الأنظمة</p><a href="https://pendrivelinux.com/yumi-multiboot-usb-creator/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>UNetbootin</h3><p>إنشاء وسائط Linux</p><a href="https://unetbootin.github.io/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Universal USB Installer</h3><p>إنشاء فلاشة إقلاع</p><a href="https://pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Fedora Media Writer</h3><p>إنشاء فلاشة Fedora</p><a href="https://fedoraproject.org/workstation/download/" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-    <div class="cards">
+<section id="clean">
+<h2 class="section-title">2. برامج التنظيف والصيانة</h2>
+<div class="cards">
+<div class="card"><h3>CCleaner</h3><p>تنظيف الملفات المؤقتة</p><a href="https://www.ccleaner.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Wise Care 365</h3><p>تنظيف وصيانة الكمبيوتر</p><a href="https://www.wisecleaner.com/wise-care-365.html" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Glary Utilities</h3><p>أدوات صيانة متنوعة</p><a href="https://www.glarysoft.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Advanced SystemCare</h3><p>تحسين أداء الجهاز</p><a href="https://www.iobit.com/en/advancedsystemcarefree.php" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>BleachBit</h3><p>تنظيف الملفات غير الضرورية</p><a href="https://www.bleachbit.org/" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-      <div class="card">
-        <h3>Windows XP</h3>
-        <p>نظام ويندوز الكلاسيكي للأجهزة القديمة.</p>
-        <a href="https://getmyos.com/name/windows-xp" target="_blank">عرض النسخ</a>
-      </div>
+<section id="disk">
+<h2 class="section-title">3. برامج فحص الهارد والـ SSD</h2>
+<div class="cards">
+<div class="card"><h3>CrystalDiskInfo</h3><p>فحص صحة الهارد</p><a href="https://crystalmark.info/en/software/crystaldiskinfo/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>HDD Sentinel</h3><p>متابعة حالة وحدات التخزين</p><a href="https://www.hdsentinel.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>CrystalDiskMark</h3><p>اختبار سرعة الهارد</p><a href="https://crystalmark.info/en/software/crystaldiskmark/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Victoria HDD</h3><p>فحص وحدات التخزين</p><a href="https://hdd.by/victoria/" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-      <div class="card">
-        <h3>Windows Vista</h3>
-        <p>نظام ويندوز فيستا.</p>
-        <a href="https://getmyos.com/variant/microsoft-windows" target="_blank">عرض النسخ</a>
-      </div>
+<section id="hardware">
+<h2 class="section-title">4. برامج فحص الرامات والمعالج ومكونات الجهاز</h2>
+<div class="cards">
+<div class="card"><h3>MemTest86</h3><p>اختبار وفحص ذاكرة RAM</p><a href="https://www.memtest86.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>CPU-Z</h3><p>معلومات المعالج والرامات واللوحة</p><a href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>GPU-Z</h3><p>معلومات كارت الشاشة</p><a href="https://www.techpowerup.com/gpuz/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>HWMonitor</h3><p>مراقبة الحرارة والفولت</p><a href="https://www.cpuid.com/softwares/hwmonitor.html" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>HWiNFO</h3><p>معلومات تفصيلية عن الجهاز</p><a href="https://www.hwinfo.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>AIDA64</h3><p>فحص معلومات ومكونات الجهاز</p><a href="https://www.aida64.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Speccy</h3><p>معرفة مواصفات الكمبيوتر</p><a href="https://www.ccleaner.com/speccy" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-      <div class="card">
-        <h3>Windows 7</h3>
-        <p>ويندوز 7 بإصداراته المختلفة.</p>
-        <a href="https://getmyos.com/name/windows-7" target="_blank">عرض النسخ</a>
-      </div>
+<section id="drivers">
+<h2 class="section-title">5. برامج التعريفات</h2>
+<div class="cards">
+<div class="card"><h3>Snappy Driver Installer</h3><p>البحث عن تعريفات الأجهزة</p><a href="https://sdi-tool.org/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Driver Booster</h3><p>تحديث تعريفات الأجهزة</p><a href="https://www.iobit.com/en/driver-booster.php" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Intel Driver Assistant</h3><p>تحديث تعريفات Intel</p><a href="https://www.intel.com/content/www/us/en/support/detect.html" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>NVIDIA Drivers</h3><p>تعريفات كروت NVIDIA</p><a href="https://www.nvidia.com/Download/index.aspx" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>AMD Drivers</h3><p>تعريفات AMD</p><a href="https://www.amd.com/en/support" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-      <div class="card">
-        <h3>Windows 8</h3>
-        <p>ويندوز 8.</p>
-        <a href="https://getmyos.com/name/windows-8" target="_blank">عرض النسخ</a>
-      </div>
+<section id="repair">
+<h2 class="section-title">6. برامج إصلاح ويندوز</h2>
+<div class="cards">
+<div class="card"><h3>Windows Repair</h3><p>أدوات إصلاح مشاكل ويندوز</p><a href="https://www.tweaking.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>DISM++</h3><p>أداة صيانة وإدارة ويندوز</p><a href="https://github.com/Chuyu-Team/Dism-Multi-language" target="_blank">المصدر الرسمي</a></div>
+<div class="card"><h3>Autoruns</h3><p>إدارة برامج بدء التشغيل</p><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns" target="_blank">Microsoft الرسمي</a></div>
+<div class="card"><h3>Process Explorer</h3><p>عرض العمليات والبرامج النشطة</p><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer" target="_blank">Microsoft الرسمي</a></div>
+<div class="card"><h3>Revo Uninstaller</h3><p>إزالة البرامج وبقاياها</p><a href="https://www.revouninstaller.com/" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-      <div class="card">
-        <h3>Windows 8.1</h3>
-        <p>ويندوز 8.1.</p>
-        <a href="https://getmyos.com/name/windows-8-1" target="_blank">عرض النسخ</a>
-      </div>
+<section id="partition">
+<h2 class="section-title">7. برامج تقسيم وإدارة الهارد</h2>
+<div class="cards">
+<div class="card"><h3>GParted</h3><p>تقسيم وإدارة الأقراص</p><a href="https://gparted.org/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>AOMEI Partition Assistant</h3><p>إدارة أقسام الهارد</p><a href="https://www.aomeitech.com/pa/partition-assistant.html" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>MiniTool Partition Wizard</h3><p>تقسيم وإدارة المساحات</p><a href="https://www.partitionwizard.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>EaseUS Partition Master</h3><p>إدارة وحدات التخزين</p><a href="https://www.easeus.com/partition-manager/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Macrorit Partition Expert</h3><p>تقسيم الهارد</p><a href="https://macrorit.com/partition-magic-manager/" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-      <div class="card">
-        <h3>Windows 10</h3>
-        <p>ويندوز 10 بإصداراته المختلفة.</p>
-        <a href="https://getmyos.com/name/windows-10" target="_blank">عرض النسخ</a>
-      </div>
+<section id="recovery">
+<h2 class="section-title">8. استعادة الملفات والنسخ الاحتياطي</h2>
+<div class="cards">
+<div class="card"><h3>Recuva</h3><p>استعادة الملفات المحذوفة</p><a href="https://www.ccleaner.com/recuva" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>PhotoRec</h3><p>استعادة الصور والملفات</p><a href="https://www.cgsecurity.org/wiki/PhotoRec" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>TestDisk</h3><p>استعادة الأقسام المفقودة</p><a href="https://www.cgsecurity.org/wiki/TestDisk" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>EaseUS Data Recovery</h3><p>استعادة البيانات</p><a href="https://www.easeus.com/datarecoverywizard/free-data-recovery-software.htm" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>AOMEI Backupper</h3><p>نسخ احتياطي واستعادة</p><a href="https://www.aomeitech.com/ab/standard.html" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Macrium Reflect</h3><p>إنشاء نسخ احتياطية للأقراص</p><a href="https://www.macrium.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Clonezilla</h3><p>استنساخ الأقراص</p><a href="https://clonezilla.org/" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-      <div class="card">
-        <h3>Windows 11</h3>
-        <p>تحميل ويندوز 11 من موقع Microsoft الرسمي.</p>
-        <a href="https://www.microsoft.com/software-download/windows11" target="_blank">موقع Microsoft الرسمي</a>
-      </div>
+<section id="security">
+<h2 class="section-title">9. برامج الحماية</h2>
+<div class="cards">
+<div class="card"><h3>Malwarebytes</h3><p>فحص البرامج الضارة</p><a href="https://www.malwarebytes.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>ESET</h3><p>حماية الكمبيوتر</p><a href="https://www.eset.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Avast</h3><p>مكافحة الفيروسات</p><a href="https://www.avast.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Bitdefender</h3><p>الحماية والأمان</p><a href="https://www.bitdefender.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Kaspersky</h3><p>حماية الأجهزة</p><a href="https://www.kaspersky.com/" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-    </div>
-  </section>
+<section id="programs">
+<h2 class="section-title">10. برامج الكمبيوتر الأساسية</h2>
+<div class="cards">
+<div class="card"><h3>WinRAR</h3><p>ضغط وفك الملفات</p><a href="https://www.win-rar.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>7-Zip</h3><p>ضغط وفك الملفات</p><a href="https://www.7-zip.org/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>PeaZip</h3><p>إدارة الملفات المضغوطة</p><a href="https://peazip.github.io/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>VLC</h3><p>مشغل فيديو وصوت</p><a href="https://www.videolan.org/vlc/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>MPC-HC</h3><p>مشغل وسائط</p><a href="https://github.com/clsid2/mpc-hc" target="_blank">المصدر الرسمي</a></div>
+<div class="card"><h3>PotPlayer</h3><p>مشغل فيديو وصوت</p><a href="https://potplayer.daum.net/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Audacity</h3><p>تسجيل وتحرير الصوت</p><a href="https://www.audacityteam.org/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Google Chrome</h3><p>متصفح الإنترنت</p><a href="https://www.google.com/chrome/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Firefox</h3><p>متصفح الإنترنت</p><a href="https://www.mozilla.org/firefox/new/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Opera</h3><p>متصفح الإنترنت</p><a href="https://www.opera.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Brave</h3><p>متصفح يركز على الخصوصية</p><a href="https://brave.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Internet Download Manager</h3><p>إدارة التحميلات</p><a href="https://www.internetdownloadmanager.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Free Download Manager</h3><p>إدارة التحميلات</p><a href="https://www.freedownloadmanager.org/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Microsoft Office</h3><p>برامج الكتابة والجداول والعروض</p><a href="https://www.microsoft.com/microsoft-365" target="_blank">Microsoft الرسمي</a></div>
+<div class="card"><h3>LibreOffice</h3><p>حزمة مكتبية مجانية</p><a href="https://www.libreoffice.org/download/download-libreoffice/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>WPS Office</h3><p>حزمة برامج مكتبية</p><a href="https://www.wps.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Adobe Acrobat Reader</h3><p>قراءة ملفات PDF</p><a href="https://get.adobe.com/reader/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>AnyDesk</h3><p>التحكم عن بعد</p><a href="https://anydesk.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>TeamViewer</h3><p>التحكم عن بعد</p><a href="https://www.teamviewer.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>RustDesk</h3><p>اتصال وتحكم عن بعد</p><a href="https://rustdesk.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>GIMP</h3><p>تحرير الصور</p><a href="https://www.gimp.org/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Inkscape</h3><p>تصميم الرسومات</p><a href="https://inkscape.org/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Blender</h3><p>تصميم ثلاثي الأبعاد</p><a href="https://www.blender.org/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Paint.NET</h3><p>تحرير الصور</p><a href="https://www.getpaint.net/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Visual Studio Code</h3><p>محرر أكواد</p><a href="https://code.visualstudio.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Notepad++</h3><p>محرر نصوص وأكواد</p><a href="https://notepad-plus-plus.org/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Visual Studio</h3><p>بيئة تطوير وبرمجة</p><a href="https://visualstudio.microsoft.com/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Python</h3><p>لغة البرمجة Python</p><a href="https://www.python.org/downloads/" target="_blank">الموقع الرسمي</a></div>
+<div class="card"><h3>Git</h3><p>إدارة الأكواد البرمجية</p><a href="https://git-scm.com/" target="_blank">الموقع الرسمي</a></div>
+</div>
+</section>
 
-  <section id="programs">
-    <h2 class="section-title">برامج الكمبيوتر</h2>
-    <p class="note">روابط تحميل البرامج من مواقعها الرسمية.</p>
+<section id="solutions">
+<h2 class="section-title">11. حلول مشاكل الكمبيوتر</h2>
+<div class="cards">
+<div class="card"><h3>مشاكل تثبيت ويندوز</h3><p>أدلة استكشاف أخطاء التثبيت</p><a href="https://support.microsoft.com/windows" target="_blank">مركز الدعم</a></div>
+<div class="card"><h3>مشاكل الإنترنت</h3><p>استكشاف مشاكل الاتصال</p><a href="https://support.microsoft.com/windows" target="_blank">مركز الدعم</a></div>
+<div class="card"><h3>مشاكل الصوت</h3><p>مساعدة في الصوت والتعريفات</p><a href="https://support.microsoft.com/windows" target="_blank">مركز الدعم</a></div>
+<div class="card"><h3>مشاكل الشاشة</h3><p>مشاكل العرض ودقة الشاشة</p><a href="https://support.microsoft.com/windows" target="_blank">مركز الدعم</a></div>
+<div class="card"><h3>بطء الكمبيوتر</h3><p>إرشادات تحسين الأداء</p><a href="https://support.microsoft.com/windows" target="_blank">مركز الدعم</a></div>
+<div class="card"><h3>مشاكل التعريفات</h3><p>استكشاف أخطاء الأجهزة</p><a href="https://support.microsoft.com/windows" target="_blank">مركز الدعم</a></div>
+</div>
+</section>
 
-    <div class="cards">
+<section id="about">
+<h2 class="section-title">من نحن</h2>
+<p class="note">عالم الجوكر للكمبيوتر مكتبة تقنية لأنظمة التشغيل والبرامج والتعريفات وأدوات الصيانة وحلول الكمبيوتر.</p>
+</section>
 
-      <div class="card">
-        <h3>Google Chrome</h3>
-        <p>متصفح الإنترنت من Google.</p>
-        <a href="https://www.google.com/chrome/" target="_blank">الموقع الرسمي</a>
-      </div>
-
-      <div class="card">
-        <h3>Mozilla Firefox</h3>
-        <p>متصفح إنترنت سريع ومفتوح المصدر.</p>
-        <a href="https://www.mozilla.org/firefox/new/" target="_blank">الموقع الرسمي</a>
-      </div>
-
-      <div class="card">
-        <h3>VLC Media Player</h3>
-        <p>مشغل الفيديو والصوت.</p>
-        <a href="https://www.videolan.org/vlc/" target="_blank">الموقع الرسمي</a>
-      </div>
-
-      <div class="card">
-        <h3>7-Zip</h3>
-        <p>ضغط وفك ضغط الملفات.</p>
-        <a href="https://www.7-zip.org/" target="_blank">الموقع الرسمي</a>
-      </div>
-
-      <div class="card">
-        <h3>LibreOffice</h3>
-        <p>مجموعة برامج مكتبية للكتابة والجداول والعروض.</p>
-        <a href="https://www.libreoffice.org/download/download-libreoffice/" target="_blank">الموقع الرسمي</a>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="drivers">
-    <h2 class="section-title">تعريفات الكمبيوتر</h2>
-    <p class="note">احصل على التعريفات من الشركات المصنعة لجهازك أو مكوناته.</p>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>NVIDIA</h3>
-        <p>تعريفات كروت الشاشة NVIDIA.</p>
-        <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">تحميل التعريفات</a>
-      </div>
-
-      <div class="card">
-        <h3>AMD</h3>
-        <p>تعريفات كروت الشاشة ومعالجات AMD.</p>
-        <a href="https://www.amd.com/en/support" target="_blank">تحميل التعريفات</a>
-      </div>
-
-      <div class="card">
-        <h3>Intel</h3>
-        <p>تعريفات Intel ومكوناتها.</p>
-        <a href="https://www.intel.com/content/www/us/en/download-center/home.html" target="_blank">تحميل التعريفات</a>
-      </div>
-
-      <div class="card">
-        <h3>HP Support</h3>
-        <p>تعريفات ودعم أجهزة HP.</p>
-        <a href="https://support.hp.com/" target="_blank">الموقع الرسمي</a>
-      </div>
-
-      <div class="card">
-        <h3>Dell Support</h3>
-        <p>تعريفات ودعم أجهزة Dell.</p>
-        <a href="https://www.dell.com/support/home/" target="_blank">الموقع الرسمي</a>
-      </div>
-
-      <div class="card">
-        <h3>Lenovo Support</h3>
-        <p>تعريفات ودعم أجهزة Lenovo.</p>
-        <a href="https://support.lenovo.com/" target="_blank">الموقع الرسمي</a>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="tools">
-    <h2 class="section-title">أدوات الصيانة</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Windows Security</h3>
-        <p>أداة الحماية المدمجة في ويندوز.</p>
-        <a href="https://support.microsoft.com/windows" target="_blank">دليل Microsoft</a>
-      </div>
-
-      <div class="card">
-        <h3>Microsoft Update</h3>
-        <p>تحديث نظام ويندوز ومكوناته.</p>
-        <a href="https://support.microsoft.com/windows" target="_blank">مساعدة التحديثات</a>
-      </div>
-
-      <div class="card">
-        <h3>CrystalDiskInfo</h3>
-        <p>متابعة حالة وحدات التخزين.</p>
-        <a href="https://crystalmark.info/en/software/crystaldiskinfo/" target="_blank">الموقع الرسمي</a>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="solutions">
-    <h2 class="section-title">حلول مشاكل الكمبيوتر</h2>
-    <p class="note">إرشادات تساعدك في التعامل مع أشهر مشاكل الكمبيوتر.</p>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>مشاكل تثبيت ويندوز</h3>
-        <p>تعرف على خطوات التثبيت واستكشاف الأخطاء الشائعة.</p>
-        <a href="https://support.microsoft.com/windows" target="_blank">عرض المساعدة</a>
-      </div>
-
-      <div class="card">
-        <h3>مشاكل الإنترنت</h3>
-        <p>حل مشاكل الاتصال بالشبكة والإنترنت.</p>
-        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
-      </div>
-
-      <div class="card">
-        <h3>مشاكل الصوت</h3>
-        <p>إرشادات لحل مشاكل الصوت والتعريفات.</p>
-        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
-      </div>
-
-      <div class="card">
-        <h3>مشاكل الشاشة</h3>
-        <p>مساعدة في مشاكل العرض ودقة الشاشة.</p>
-        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
-      </div>
-
-      <div class="card">
-        <h3>بطء الكمبيوتر</h3>
-        <p>خطوات لتحسين أداء الجهاز.</p>
-        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
-      </div>
-
-      <div class="card">
-        <h3>مشاكل التعريفات</h3>
-        <p>مساعدة في تحديث التعريفات أو استكشاف أخطائها.</p>
-        <a href="https://support.microsoft.com/windows" target="_blank">عرض الحلول</a>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="about">
-    <h2 class="section-title">من نحن</h2>
-    <p class="note">
-      عالم الجوكر للكمبيوتر موقع يهتم بأنظمة التشغيل والبرامج والتعريفات
-      والشروحات التقنية وحلول مشاكل الكمبيوتر.
-    </p>
-  </section>
-
-  <footer>
-    <p>J | عالم الجوكر للكمبيوتر</p>
-    <p>جميع الحقوق محفوظة © 2026</p>
-  </footer>
+<footer>
+<p>J | عالم الجوكر للكمبيوتر</p>
+<p>جميع الحقوق محفوظة © 2026</p>
+</footer>
 
 </body>
 </html>
